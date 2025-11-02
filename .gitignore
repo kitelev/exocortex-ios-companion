@@ -19,6 +19,7 @@ DerivedData/
 *.xcscmblueprint
 *.xcscheme
 !*.xcscheme/
+!ExocortexTaskTracker.xcodeproj/xcshareddata/xcschemes/*.xcscheme
 project.xcworkspace/
 !project.xcworkspace/contents.xcworkspacedata
 

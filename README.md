@@ -53,11 +53,21 @@ exocortex://task/start?taskId=abc&title=Task%20Title&startTime=2025-01-01T10:00:
 ## Development Status
 
 - [x] Basic project structure created
-- [ ] URL scheme handler implementation
-- [ ] Task data models
+- [x] URL scheme handler implementation (Swift files created)
+- [x] Task data models (Swift files created)
+- [ ] **⚠️ Files need to be added to Xcode project** (see XCODE_TODO.md)
+- [ ] Test target configuration in Xcode
 - [ ] iCloud sync service
 - [ ] ActivityKit Live Activity implementation
 - [ ] Widget extension with Live Activity UI
+
+### CI Status
+
+[![CI](https://github.com/kitelev/exocortex-ios-companion/actions/workflows/ci.yml/badge.svg)](https://github.com/kitelev/exocortex-ios-companion/actions/workflows/ci.yml)
+
+- ✅ SwiftLint: Passing
+- ✅ Build: Passing  
+- ⚠️ Tests: Skipped (test target not configured - see XCODE_TODO.md)
 
 ## Related
 
