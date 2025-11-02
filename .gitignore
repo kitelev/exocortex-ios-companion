@@ -48,3 +48,5 @@ vendor/
 
 # CI artifacts
 *.log
+# XcodeGen
+project.yml

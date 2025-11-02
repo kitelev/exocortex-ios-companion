@@ -52,11 +52,11 @@ exocortex://task/start?taskId=abc&title=Task%20Title&startTime=2025-01-01T10:00:
 
 ## Development Status
 
-- [x] Basic project structure created
-- [x] URL scheme handler implementation (Swift files created)
-- [x] Task data models (Swift files created)
-- [ ] **⚠️ Files need to be added to Xcode project** (see XCODE_TODO.md)
-- [ ] Test target configuration in Xcode
+- [x] Basic project structure created (using XcodeGen)
+- [x] URL scheme handler implementation
+- [x] Task data models
+- [x] Unit tests for URL parsing
+- [x] Xcode project properly configured with targets
 - [ ] iCloud sync service
 - [ ] ActivityKit Live Activity implementation
 - [ ] Widget extension with Live Activity UI
@@ -67,7 +67,7 @@ exocortex://task/start?taskId=abc&title=Task%20Title&startTime=2025-01-01T10:00:
 
 - ✅ SwiftLint: Passing
 - ✅ Build: Passing  
-- ⚠️ Tests: Skipped (test target not configured - see XCODE_TODO.md)
+- ✅ Tests: Passing
 
 ## Related
 

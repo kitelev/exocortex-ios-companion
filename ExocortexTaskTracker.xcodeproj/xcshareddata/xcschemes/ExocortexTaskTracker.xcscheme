@@ -4,7 +4,8 @@
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      runPostActionsOnFailure = "NO">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +15,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1000016000000000000001"
+               BlueprintIdentifier = "18C60A393F17D9A1133B97FD"
                BuildableName = "ExocortexTaskTracker.app"
                BlueprintName = "ExocortexTaskTracker"
+               ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "302933F28477E2135AE6B7B3"
+               BuildableName = "ExocortexTaskTrackerTests.xctest"
+               BlueprintName = "ExocortexTaskTrackerTests"
                ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,20 +42,32 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18C60A393F17D9A1133B97FD"
+            BuildableName = "ExocortexTaskTracker.app"
+            BlueprintName = "ExocortexTaskTracker"
+            ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO"
-            parallelizable = "YES">
+            parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ExocortexTaskTrackerTests"
+               BlueprintIdentifier = "302933F28477E2135AE6B7B3"
                BuildableName = "ExocortexTaskTrackerTests.xctest"
                BlueprintName = "ExocortexTaskTrackerTests"
                ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -56,12 +83,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1000016000000000000001"
+            BlueprintIdentifier = "18C60A393F17D9A1133B97FD"
             BuildableName = "ExocortexTaskTracker.app"
             BlueprintName = "ExocortexTaskTracker"
             ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -73,12 +102,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1000016000000000000001"
+            BlueprintIdentifier = "18C60A393F17D9A1133B97FD"
             BuildableName = "ExocortexTaskTracker.app"
             BlueprintName = "ExocortexTaskTracker"
             ReferencedContainer = "container:ExocortexTaskTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
