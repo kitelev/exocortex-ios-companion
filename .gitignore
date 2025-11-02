@@ -16,6 +16,11 @@ DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
+*.xcscmblueprint
+*.xcscheme
+!*.xcscheme/
+project.xcworkspace/
+!project.xcworkspace/contents.xcworkspacedata
 
 # CocoaPods
 Pods/
@@ -35,3 +40,10 @@ fastlane/test_output
 
 # Code Injection
 iOSInjectionProject/
+
+# Ruby/Bundler
+.bundle/
+vendor/
+
+# CI artifacts
+*.log
