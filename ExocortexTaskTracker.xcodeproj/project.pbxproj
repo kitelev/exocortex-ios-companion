@@ -12,8 +12,12 @@
 		77479D2DB2A16896379A10F9 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353B710D1EC5EBA8E4DFA56 /* TaskModel.swift */; };
 		92144826310B3B8F816AA266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E47581302F9978C55CF0D /* Assets.xcassets */; };
 		9F76949999D8CF588C35C3C9 /* URLSchemeHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95074959EE88B81A401AD1 /* URLSchemeHandlerTests.swift */; };
+		B68792319436A99D82EFFDF8 /* ActivityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAC49163CFBB28DCBFF23F95 /* ActivityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B961385E5195B4F786B41934 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC49163CFBB28DCBFF23F95 /* ActivityKit.framework */; };
 		D1B6C8E716E396848E2CF050 /* SwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6129AD9E57E484B18337C8E0 /* SwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D88A425DF04C44332FDB0D2A /* TaskActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9FFB9AED7641BCD477DAF /* TaskActivityAttributes.swift */; };
 		E9249DC91D4F2812202DD801 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129AD9E57E484B18337C8E0 /* SwiftUI.framework */; };
+		EEA83B967A5D955C69C2090B /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3BC1680DB29F8032A3237 /* ActivityService.swift */; };
 		EF43F46E26D0E8A981E06F5A /* ExocortexTaskTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE392F558EFE99568B9564A /* ExocortexTaskTrackerApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D1B6C8E716E396848E2CF050 /* SwiftUI.framework in Embed Frameworks */,
+				B68792319436A99D82EFFDF8 /* ActivityKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,8 +53,11 @@
 		472E47581302F9978C55CF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D95074959EE88B81A401AD1 /* URLSchemeHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeHandlerTests.swift; sourceTree = "<group>"; };
 		51D4E13EBAAD8AAED60F7295 /* URLSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeHandler.swift; sourceTree = "<group>"; };
+		52E3BC1680DB29F8032A3237 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 		6129AD9E57E484B18337C8E0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
 		C8A7A5DA20A6D9E3550995FA /* ExocortexTaskTracker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ExocortexTaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC49163CFBB28DCBFF23F95 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ActivityKit.framework; sourceTree = "<group>"; };
+		D8F9FFB9AED7641BCD477DAF /* TaskActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskActivityAttributes.swift; sourceTree = "<group>"; };
 		E353B710D1EC5EBA8E4DFA56 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		FAF4E22927975D01F7D3697F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9249DC91D4F2812202DD801 /* SwiftUI.framework in Frameworks */,
+				B961385E5195B4F786B41934 /* ActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 		2BEFD5D12AB042BB96347A84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8F9FFB9AED7641BCD477DAF /* TaskActivityAttributes.swift */,
 				E353B710D1EC5EBA8E4DFA56 /* TaskModel.swift */,
 			);
 			path = Models;
@@ -109,6 +119,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		62841985D02BE27539CB0976 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52E3BC1680DB29F8032A3237 /* ActivityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7D37E33A2ABC48FA925021FB /* TaskTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +138,7 @@
 		94CFB8CC03FF0F69D6C721F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAC49163CFBB28DCBFF23F95 /* ActivityKit.framework */,
 				6129AD9E57E484B18337C8E0 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
@@ -131,6 +150,7 @@
 				CB314E13DC72B2AB98462132 /* App */,
 				AE36CF3228B0436137B48032 /* Features */,
 				25223F8F1668B0BA1681A87B /* Resources */,
+				62841985D02BE27539CB0976 /* Services */,
 			);
 			path = ExocortexTaskTracker;
 			sourceTree = "<group>";
@@ -265,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA83B967A5D955C69C2090B /* ActivityService.swift in Sources */,
 				51EF6F87B9B63990CDAACFC5 /* ContentView.swift in Sources */,
 				EF43F46E26D0E8A981E06F5A /* ExocortexTaskTrackerApp.swift in Sources */,
+				D88A425DF04C44332FDB0D2A /* TaskActivityAttributes.swift in Sources */,
 				77479D2DB2A16896379A10F9 /* TaskModel.swift in Sources */,
 				4D40727EC96058E813D9DA87 /* URLSchemeHandler.swift in Sources */,
 			);
@@ -394,6 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.exocortex.tasktracker;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -482,6 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.exocortex.tasktracker;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
